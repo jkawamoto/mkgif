@@ -1,9 +1,11 @@
 [package]
-name = "png2gif"
+name = "mkgif"
 version = "0.1.0"
+authors = ["Junpei Kawamoto <kawamoto.junpei@gmail.com>"]
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+description = "Create an animation GIF from the given image files"
+repository = "https://github.com/jkawamoto/mkgif"
+license-file = "LICENSE"
 
 [dependencies]
 anyhow = { version = "1.0.71", features = ["backtrace"] }

@@ -10,6 +10,7 @@ use indicatif::ProgressBar;
 
 const DEFAULT_OUTPUT: &str = "output.gif";
 
+/// Create an animation GIF from the given image files.
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
 struct Args {

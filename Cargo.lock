@@ -572,6 +572,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "mkgif"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "clap",
+ "image",
+ "indicatif",
+]
+
+[[package]]
 name = "nanorand"
 version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -672,16 +682,6 @@ dependencies = [
  "fdeflate",
  "flate2",
  "miniz_oxide 0.7.1",
-]
-
-[[package]]
-name = "png2gif"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "clap",
- "image",
- "indicatif",
 ]
 
 [[package]]
