@@ -1,7 +1,7 @@
 use std::fs::File;
 use std::string::ToString;
 
-use anyhow::Result;
+use anyhow::{bail, Result};
 use clap::Parser;
 use image::codecs::gif::{GifEncoder, Repeat};
 use image::io::Reader;
@@ -26,6 +26,9 @@ struct Args {
 
 fn main() -> Result<()> {
     let mut args = Args::parse();
+    if args.paths.is_empty() {
+        bail!("no image files are given");
+    }
     args.paths.sort();
 
     let pb = ProgressBar::new(args.paths.len() as u64);
