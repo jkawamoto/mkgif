@@ -1,0 +1,31 @@
+name: Rust application
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set Toolchain
+        uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: stable
+          components: rustfmt, clippy
+      - uses: Swatinem/rust-cache@v2
+      - name: Run check
+        run: cargo check
+      - name: Run rustfmt
+        run: cargo fmt --all -- --check
+      - name: Run clippy
+        run: cargo clippy -- -D warnings
+      - name: Run test
+        run: cargo test
+      - name: Build
+        run: cargo build
+      - name: Run pre-commit hook
+        uses: pre-commit/action@v3.0.0
