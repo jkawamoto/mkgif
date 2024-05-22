@@ -19,9 +19,12 @@ Options:
 ```
 
 ## Installation
-```shell
-cargo install --git https://github.com/jkawamoto/mkgif
+
+```bash
+brew install jkawamoto/tap/mkgif
 ```
+
+Prebuilt binaries are also available on the [release page](https://github.com/jkawamoto/mkgif/releases).
 
 ## License
 This application is released under the MIT License. For details, see the [LICENSE](LICENSE) file.
