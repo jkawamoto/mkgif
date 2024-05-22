@@ -1,6 +1,6 @@
 [package]
 name = "mkgif"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Junpei Kawamoto <kawamoto.junpei@gmail.com>"]
 edition = "2021"
 description = "Create an animation GIF from the given image files"
