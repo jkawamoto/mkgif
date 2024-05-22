@@ -1,5 +1,5 @@
 # mkgif
-[![Rust application](https://github.com/jkawamoto/mkgif/actions/workflows/ci.yaml/badge.svg)](https://github.com/jkawamoto/mkgif/actions/workflows/ci.yaml)
+[![Build](https://github.com/jkawamoto/mkgif/actions/workflows/build.yaml/badge.svg)](https://github.com/jkawamoto/mkgif/actions/workflows/build.yaml)
 
 Create an animation GIF from the given image files.
 
